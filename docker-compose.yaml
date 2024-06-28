@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   backend:
-    build: ./api
+    build: ./Bus-Ticket-Booking-System-BACKEND
     container_name: devops_backend
     ports:
       - "8070:8070"
@@ -10,7 +10,7 @@ services:
       - mongo
 
   frontend:
-    build: ./client
+    build: ./Bus-ticket-Booking-System-Frontend
     container_name: devops_frontend
     ports:
       - "3000:3000"
