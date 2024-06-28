@@ -3,7 +3,7 @@ version: '3.8'
 services:
   backend:
     build: ./Bus-Ticket-Booking-System-BACKEND
-    container_name: devops_backend
+    container_name: new_devops_backend
     ports:
       - "8070:8070"
     depends_on:
@@ -11,7 +11,7 @@ services:
 
   frontend:
     build: ./Bus-ticket-Booking-System-Frontend
-    container_name: devops_frontend
+    container_name: new_devops_frontend
     ports:
       - "3000:3000"
     depends_on:
