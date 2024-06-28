@@ -1,0 +1,8 @@
+.common__section {
+    background: 
+      url("../assets/images/Tr.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0px;
+  }

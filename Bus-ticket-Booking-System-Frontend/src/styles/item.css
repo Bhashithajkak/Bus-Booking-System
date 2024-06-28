@@ -1,0 +1,68 @@
+.f__item {
+    border: 1px solid #7c8a9736;
+    
+    padding: 30px;
+    border-radius: 5px;
+    
+    background: rgb(197, 133, 133);
+  }
+
+  .f__img{
+
+    transition: .3s;
+
+  }
+
+  .f__img img{
+    
+    border-radius: 50px 5px 0 0;
+    height: 200;
+
+  }
+
+  .f__img span{
+
+    height: max-content;
+  }
+  .f__img:hover{
+    transform: scale(1.1);
+  }
+
+  
+ 
+  
+
+  
+ 
+  
+
+ 
+  
+  
+  .f__item-content h4 {
+    font-size: 1.8rem;
+    color: blue;
+  }
+  
+
+  
+  @media only screen and (max-width: 992px) {
+    .f__item h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0;
+    }
+  
+   
+  
+  
+ 
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .f__item h4 {
+      font-size: 1rem;
+    }
+  
+   
+ 
+  }

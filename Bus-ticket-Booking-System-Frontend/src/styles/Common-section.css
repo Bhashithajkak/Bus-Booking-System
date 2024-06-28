@@ -1,0 +1,8 @@
+.common__section {
+    background: 
+      url("../assets/images/Sheat.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0px;
+  }
