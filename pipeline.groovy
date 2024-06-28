@@ -49,13 +49,13 @@ pipeline {
 
         stage('Add tag to Image Frontend') {
             steps {
-                bat 'docker tag devops-frontend:latest bhashithajkak/bus-booking-system-frontend:latest'
+                bat 'docker tag bus_booking_system-frontend:latest bhashithajkak/bus-booking-system-frontend:latest'
             }
         }
 
         stage('Add tag to Image Backend') {
             steps {
-                bat 'docker tag devops-backend:latest bhashithajkak/bus-booking-system-backend:latest'
+                bat 'docker tag bus_booking_system-backend:latest bhashithajkak/bus-booking-system-backend:latest'
             }
         }
 
