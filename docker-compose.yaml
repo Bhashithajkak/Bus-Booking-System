@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./api
+    container_name: devops_backend
+    ports:
+      - "8070:8070"
+    depends_on:
+      - mongo
+
+  frontend:
+    build: ./client
+    container_name: devops_frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - '27017:27017'
+
+volumes:
+  mongo-data:
+      driver: local
