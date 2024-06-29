@@ -5,7 +5,7 @@ services:
     build: ./Bus-Ticket-Booking-System-BACKEND
     container_name: new_devops_backend
     ports:
-      - "8070:8070"
+      - "4000:4000"
     depends_on:
       - mongo
 
