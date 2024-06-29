@@ -49,25 +49,25 @@ pipeline {
 
         stage('Add tag to Image Frontend') {
             steps {
-                bat 'docker tag bus-booking-system-frontend:latest bhashithajkak/bus-booking-system-frontend:latest'
+                bat 'docker tag bus-booking-system-frontend:latest bhashithajkak/bus_booking_new_frotend:latest'
             }
         }
 
         stage('Add tag to Image Backend') {
             steps {
-                bat 'docker tag bus-booking-system-backend:latest bhashithajkak/bus-booking-system-backend:latest'
+                bat 'docker tag bus-booking-system-backend:latest bhashithajkak/bus_booking_new_backend:latest'
             }
         }
 
         stage('Push Image Frontend') {
             steps {
-                bat 'docker push bhashithajkak/bus-booking-system-frontend:latest'
+                bat 'docker push bhashithajkak/bus_booking_new_frotend:latest'
             }
         }
 
         stage('Push Image Backend') {
             steps {
-                bat 'docker push bhashithajkak/bus-booking-system-frontend:latest'
+                bat 'docker push bhashithajkak/bus_booking_new_backend:latest'
             }
         }
 
