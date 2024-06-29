@@ -1,7 +1,4 @@
 
-
-
-
 const express=require("express");
 const mongoose=require("mongoose");
 const bodyparser=require("body-parser");
@@ -11,7 +8,7 @@ const app=express();
 
 require("dotenv").config();
 
-const PORT=process.env.PORT||8070;
+const PORT=process.env.PORT||4000;
 
 app.use(cors());
 app.use(bodyparser.json());
