@@ -8,6 +8,8 @@ services:
       - "4000:4000"
     depends_on:
       - mongo
+    environment:
+      - MONGODB_URL=mongodb+srv://Ishan:Ishan1998@cluster0.cyhy4nu.mongodb.net/student_db?retryWrites=true&w=majority
 
   frontend:
     build: ./Bus-ticket-Booking-System-Frontend
